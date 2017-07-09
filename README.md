@@ -38,8 +38,6 @@ This application has some views.
 - A button to decide and back to track view
 - B button to cancel and back to track view
 
-![screenshot](imgs/choosePattern.jpg)
-
 ## params view
 - change some parameters
 - up, down buttons to move
