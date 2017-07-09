@@ -1,14 +1,11 @@
 #include "Scene.h"
 
-#ifndef Title_h
-#define Title_h
+#ifndef Track_h
+#define Track_h
 extern Arduboy2 arduboy;
-extern Context context;
 
-class Title : public Scene
+class Track : public Scene
 {
-  byte cursor;
-  byte cursorH;
   public:
   virtual void init();
   virtual SceneID run();

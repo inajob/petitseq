@@ -1,14 +1,14 @@
 #include "Scene.h"
 
-#ifndef Title_h
-#define Title_h
+#ifndef Params_h
+#define Params_h
 extern Arduboy2 arduboy;
-extern Context context;
 
-class Title : public Scene
+class Params : public Scene
 {
   byte cursor;
-  byte cursorH;
+  bool selected;
+  void applyShift();
   public:
   virtual void init();
   virtual SceneID run();

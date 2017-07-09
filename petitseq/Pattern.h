@@ -1,18 +1,22 @@
 #include "Scene.h"
 
-#ifndef Title_h
-#define Title_h
+#ifndef Pattern_h
+#define Pattern_h
 extern Arduboy2 arduboy;
+extern ArduboyTones sound;
 extern Context context;
 
-class Title : public Scene
+class Pattern : public Scene
 {
   byte cursor;
-  byte cursorH;
+  byte cursorY;
+  byte seek;
   public:
   virtual void init();
   virtual SceneID run();
   virtual void draw();
 };
+
+
 
 #endif

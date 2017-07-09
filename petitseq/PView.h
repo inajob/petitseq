@@ -1,14 +1,15 @@
 #include "Scene.h"
 
-#ifndef Title_h
-#define Title_h
+#ifndef PView_h
+#define PView_h
 extern Arduboy2 arduboy;
+extern ArduboyTones sound;
 extern Context context;
 
-class Title : public Scene
+class PView : public Scene
 {
-  byte cursor;
-  byte cursorH;
+  char patternNo;
+  byte seek;
   public:
   virtual void init();
   virtual SceneID run();
